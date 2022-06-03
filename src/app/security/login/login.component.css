@@ -1,7 +1,8 @@
-body{    
+body{ 
+    background-color: black;
     height:100%;
     width:100% ; 
-    background-color:black;
+    
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -33,16 +34,18 @@ body{
 }
 
 .Login{
-    width:15%; 
+    width:20%; 
 }
 .LoginInput{
     width: 100%;
+}
+.btn-success{
+    background-color:blue ;
 }
 a{
     color: blue;
     font-weight: bold;
     text-decoration: none;
-    transition: all .4s ease-;
 }
 a:hover{
     color: #272262;

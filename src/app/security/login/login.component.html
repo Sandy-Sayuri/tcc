@@ -1,27 +1,61 @@
-<body>
-        <form class="form" action="">
-            <div class="card">
-                <div class="card-top">
-                    <img class='logo'src="../../../assets/Logo.png" alt="">
-                    <h1 class="title">Login</h1>
-                </div>
-                <br>
-                <div class="card-top">
-                    <label class="Login">Email:  </label>
-                    <input clss='Login'type="text" name="email">
-                </div><br>     
-                <div class="card-top">
-                    <label class="Login">Senha:  </label>
-                    <input type="password" name="email">
-                </div>
-                <br>
-                <div class="card-top">
-                    <button class="btn btn-primary" type="submit">Entrar</button>
-                </div>
-                <br>
-                <div class="card-top">
-                <p>Não tem uma conta ? <a href="">Cadastre-se</a> </p> 
+<section class="form" >
+    <mat-card class="card">
+      <mat-card-header class="card-top">
+        <mat-card-title>  
+          <img src="../../../assets/Logo.png" alt="Red Seller" class="logo" >
+          <h1 class="title">Login</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="card-top" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" [formGroup]="loginForm">
+          <mat-form-field class="input">
+            <input (input)="validacao = false" matInput placeholder="Email" formControlName="email">
+            <!-- <mat-error *ngIf="loginForm.controls.username.invalid">Informe seu nome de usuário.</mat-error> -->
+          </mat-form-field>
+          <mat-form-field class="input"> 
+            <input (input)="validacao = false" [type]="hideSenha ? 'password' : 'text'" matInput placeholder="Senha" formControlName="password">
+            <mat-icon matSuffix (click)="hideSenha = !hideSenha" class="linkPointer" style="font-size: 100%;">{{hideSenha ? 'visibility_off' : 'visibility'}}</mat-icon>
+            <!-- <mat-error *ngIf="loginForm.controls.password.invalid">Insira sua senha.</mat-error> -->
+          </mat-form-field>
+          <section class="sectionLogin">
+            <div class="button">
+              <button mat-button color="primary" class="btn-success" (click)="login(loginForm.value)" [disabled]="!loginForm.valid">Entrar</button>
             </div>
-                </div>
-        </form>
-</body>
+          </section>
+          <section class="sectionLogin">
+            <a style="color: #28a745 !important" routerLink="/esquecisenha">Esqueci minha Senha</a>
+          </section>
+        </form>      
+      </mat-card-content>
+      <mat-card-footer style="text-align: center; padding-bottom: 5px;">
+          <p [hidden]="!validacao" style="color:red; margin-top: -20px; padding-bottom: 5px;"><strong>{{msgErro}}</strong></p>
+      </mat-card-footer>
+    </mat-card>
+  </section>
+
+<!-- 
+    <form class="form" action="">
+        <div class="card">
+            <div class="card-top">
+                <img class='logo'src="../../../assets/Logo.png" alt="">
+                <h1 class="title">Login</h1>
+            </div>
+            <br>
+       -     <div class="card-top">
+                <label class="Login">Email:  </label>
+                <input clss='Login'type="text" name="email">
+            </div><br>     
+            <div class="card-top">
+                <label class="Login">Senha:  </label>
+                <input type="password" name="email">
+            </div>
+            <br>
+            <div class="card-top">
+                <button class="btn btn-primary" type="submit">Entrar</button>
+            </div>
+            <br>
+            <div class="card-top">
+            <p>Não tem uma conta ? <a href="">Cadastre-se</a> </p> 
+        </div>
+            </div>
+    </form> -->-
