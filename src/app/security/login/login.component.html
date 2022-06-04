@@ -19,11 +19,11 @@
           </mat-form-field>
           <section class="sectionLogin">
             <div class="button">
-              <button mat-button color="primary" class="btn-success" (click)="login(loginForm.value)" [disabled]="!loginForm.valid">Entrar</button>
+              <button mat-button color="primary" style="color:white; "class="btn-success"(click)="login(loginForm.value)" [disabled]="!loginForm.valid">Entrar</button>
             </div>
           </section>
           <section class="sectionLogin">
-            <a style="color: #28a745 !important" routerLink="/esquecisenha">Esqueci minha Senha</a>
+            <p>Não tem conta<a routerLink="/cadastro">Cadastre-se</a></p>
           </section>
         </form>      
       </mat-card-content>
