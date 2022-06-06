@@ -1,14 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './security/login/login.component';
+import { BoxLoginComponent } from './componet/box-login/box-login.component';
+import { MenuComponent } from './componet/menu/menu.component';
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent},
+  {path:'login',component:BoxLoginComponent},
+  {path:'',component:MenuComponent},
   {path:'**',redirectTo:'login'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [RouterModule],
+  declarations: []
 })
 export class AppRoutingModule { }

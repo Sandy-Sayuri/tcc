@@ -1,0 +1,21 @@
+
+.logo{
+    height:20%;
+    width:60%
+}
+mat-sidenav-container {
+    height: calc(109vh - 65px);
+    width: 200px;
+    background: #002b5c;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: whitesmoke
+}

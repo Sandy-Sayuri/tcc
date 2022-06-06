@@ -9,13 +9,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { getPaginatorIntl } from './paginator';
-import { LoginComponent } from './security/login/login.component';
 import { LoginService } from './shared/services/login.service';
+import { BoxLoginComponent } from './componet/box-login/box-login.component';
+import { MenuComponent } from './componet/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    BoxLoginComponent,
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
