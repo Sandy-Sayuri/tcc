@@ -1,9 +1,34 @@
-mat-sidenav-container,mat-sidenav-content,mad-sidenav{
-    height: 100%;
+mat-sidenav-container{
+    width: 100%;
+    height:100%;
 }
-mat-sidenav{
-    width: 250px;
+.logo1{
+    height:100%;
+    width:10%;
+    align-items: center;
+
 }
-main{
-    padding: 10px;
+
+.logo{
+    height:20%;
+    width:60%;
+}
+.menu-btn{
+    text-align: center;
+}
+.menu{
+    height: calc(100vh - 0px);
+    width: 200px;
+    background-color: #002b5c;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+.teste{
+    background-color: #002b5c;
+}
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: whitesmoke
 }

@@ -11,18 +11,18 @@ import { MaterialModule } from './material.module';
 import { getPaginatorIntl } from './paginator';
 import { LoginService } from './shared/services/login.service';
 import { BoxLoginComponent } from './componet/box-login/box-login.component';
-import { MenuComponent } from './componet/menu/menu.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './componet/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { LayoutComponent } from './pages/layout/layout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BoxLoginComponent,
-    MenuComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
