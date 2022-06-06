@@ -1,20 +1,11 @@
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: whitesmoke
+}
 mat-sidenav-container{
     width: 100%;
     height:100%;
-}
-.logo1{
-    height:100%;
-    width:10%;
-    align-items: center;
-
-}
-
-.logo{
-    height:20%;
-    width:60%;
-}
-.menu-btn{
-    text-align: center;
 }
 .menu{
     height: calc(100vh - 0px);
@@ -24,11 +15,36 @@ mat-sidenav-container{
     padding: 16px;
     text-align: center;
 }
-.teste{
+.menu-btn{
+    text-align: center;
+}
+
+.menu-lateral{
+    height: 100%; 
+    width:100%;
+}
+.menu-lateral-cor{
     background-color: #002b5c;
+    color:white;
 }
-mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: whitesmoke
+
+ /*imagens */
+.jogadoras{
+    width: 20%;
+    height:10%;
+} 
+.logo{
+    height:20%;
+    width:60%;
+} 
+ .logo1{
+    height:100%;
+    width:10%;
+    align-items: center;
+
 }
+.rancking{
+    width: 30%;
+    height:10%;
+}
+
