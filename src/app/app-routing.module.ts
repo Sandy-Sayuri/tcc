@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BoxLoginComponent } from './componet/box-login/box-login.component';
 import { MenuComponent } from './componet/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  {path:'login',component:BoxLoginComponent},
+  {path:'login',component:HomeComponent},
   {path:'',component:MenuComponent},
   {path:'**',redirectTo:'login'}
 ];

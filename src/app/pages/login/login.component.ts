@@ -1,15 +1,15 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { BoxLoginComponent } from 'src/app/componet/box-login/box-login.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-home',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 }
