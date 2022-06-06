@@ -15,6 +15,7 @@ import { MenuComponent } from './componet/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
